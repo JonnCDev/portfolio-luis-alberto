@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/formacao.css">
 
     <!-- Build do Tailwind (CLI) -->
     <link rel="stylesheet" href="src/output.css">
@@ -30,9 +32,11 @@
         <nav>
             <ul class="infoport">
                 <li><a href="#sobre">SOBRE MIM</a></li>
+                <li><a href="#formacao">FORMAÇÃO</a></li>
                 <li><a href="#habilidades">HABILIDADES</a></li>
                 <li><a href="#projetos">PROJETOS</a></li>
                 <li><a href="#contato">CONTATO</a></li>
+
             </ul>
         </nav>
     </header>
@@ -75,13 +79,15 @@
 
     <main>
 
+        <!-- =====================================================
+             SOBRE MIM + RESULTADOS
+        ====================================================== -->
+
         <section id="sobre" class="secao-sobre">
 
             <div class="conteudo-sobre-resultados">
 
-                <!-- =========================
-                     SOBRE MIM
-                ========================== -->
+                <!-- SOBRE MIM -->
 
                 <div class="conteudo-sobre">
                     <div class="sobre-grid">
@@ -139,11 +145,20 @@
                             </p>
                         </article>
 
-                        <figure class="imagem-acao">
-                            <img
-                                src="imgs/foto_em_acao.jpg"
-                                alt="Luis Alberto atuando com uma equipe"
-                            >
+                        <figure class="imagem-acao carrossel">
+
+                            <div class="carrossel-janela">
+                                <div class="carrossel-slides">
+                                    <img src="imgs/carrossel/foto_em_acao.jpg" alt="Luis Alberto em Atuação">
+                                    <img src="imgs/carrossel/grupo1.jpeg" alt="Luis Alberto atuando em equipe">
+                                    <img src="imgs/carrossel/grupo2.jpeg" alt="Luis Alberto atuando em equipe">
+                                    <img src="imgs/carrossel/alberto.jpeg" alt="Luis Alberto">
+                                    <img src="imgs/carrossel/alberto_premio.jpeg" alt="Luis Alberto recebendo prêmio">
+                                </div>
+
+                                <button class="seta seta-esq" aria-label="Foto anterior">&#10094;</button>
+                                <button class="seta seta-dir" aria-label="Próxima foto">&#10095;</button>
+                            </div>
 
                             <figcaption>
                                 Conectando pessoas, estratégia e resultados.
@@ -153,9 +168,7 @@
                     </div>
                 </div>
 
-                <!-- =========================
-                     RESULTADOS
-                ========================== -->
+                <!-- RESULTADOS -->
 
                 <div id="resultados" class="conteudo-resultados">
 
@@ -273,6 +286,483 @@
                         </article>
 
                     </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FORMAÇÃO E CERTIFICAÇÕES
+        ====================================================== -->
+
+        <section id="formacao" class="secao-formacao">
+
+            <div class="container-formacao">
+
+                <!-- CABEÇALHO DA SEÇÃO -->
+
+                <div class="titulo-formacao">
+
+                    <span>TRAJETÓRIA PROFISSIONAL</span>
+
+                    <h2>Formação & Certificações</h2>
+
+                    <p>
+                        Formação acadêmica e certificações que complementam
+                        minha experiência em tecnologia, agilidade, gestão
+                        e transformação digital.
+                    </p>
+
+                    <div class="linha-formacao"></div>
+
+                </div>
+
+
+                <!-- FORMAÇÃO ACADÊMICA -->
+
+                <div class="bloco-formacao">
+
+                    <div class="subtitulo-formacao">
+
+                        <span class="icone-subtitulo">🎓</span>
+
+                        <div>
+                            <span>FORMAÇÃO ACADÊMICA</span>
+                            <h3>Minha formação</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="formacoes-grid">
+
+                        <!-- UNIVERSIDADE CATÓLICA DO SALVADOR -->
+
+                        <article class="formacao-card">
+
+                            <div class="logo-instituicao">
+                                <div class="logo-texto">
+                                    <img src="imgs/logos/ucsal_logo.png" alt="Universidade Católica do Salvador">
+                                </div>
+                            </div>
+
+                            <div class="formacao-conteudo">
+
+                                <span class="formacao-tipo">
+                                    Graduação
+                                </span>
+
+                                <h4>
+                                    Bachelor's Degree in
+                                    Informatics / Computer Science
+                                </h4>
+
+                                <p class="instituicao">
+                                    Universidade Católica do Salvador
+                                </p>
+
+                                <span class="periodo">
+                                    2000 — 2005
+                                </span>
+
+                                <p class="formacao-descricao">
+                                    Curso com foco em análise de sistemas.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- UNIVERSIDADE SALVADOR -->
+
+                        <article class="formacao-card">
+
+                            <div class="logo-instituicao">
+                                <div class="logo-texto">
+                                    <img src="imgs/logos/universidade_salvador_logo.jpg" alt="Universidade Salvador">
+                                </div>
+                            </div>
+
+                            <div class="formacao-conteudo">
+
+                                <span class="formacao-tipo">
+                                    MBA
+                                </span>
+
+                                <h4>
+                                    Administração e Gestão
+                                    de Negócios
+                                </h4>
+
+                                <p class="instituicao">
+                                    Universidade Salvador
+                                </p>
+
+                                <span class="periodo">
+                                    2009 — 2011
+                                </span>
+
+                                <p class="formacao-descricao">
+                                    Estudos em gestão estratégica,
+                                    Balanced Scorecard e análise SWOT.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CERTIFICAÇÕES -->
+
+                <div class="bloco-certificacoes">
+
+                    <div class="subtitulo-formacao">
+
+                        <span class="icone-subtitulo">🏆</span>
+
+                        <div>
+                            <span>ESPECIALIZAÇÕES</span>
+                            <h3>Certificações</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="certificacoes-grid">
+
+                        <!-- ROVO -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/atlassian_logo.jpg" alt="Atlassian"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>Rovo Fundamentals</h4>
+                                <p>Atlassian</p>
+                                <span>Emitida em jun. de 2026</span>
+                            </div>
+                        </article>
+
+
+                        <!-- ORACLE -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/oracle_logo.jpg" alt="Oracle"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>
+                                    Oracle Cloud Infrastructure
+                                    AI Foundations
+                                </h4>
+                                <p>Oracle</p>
+                                <span>Emitida em out. de 2025</span>
+                            </div>
+                        </article>
+
+
+                        <!-- PIPEFY ADMIN -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/pipefy_logo.jpg" alt="Pipefy"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>
+                                    Certificação de Administrador
+                                    de Sistemas do Pipefy
+                                </h4>
+                                <p>Pipefy</p>
+                                <span>Emitida em out. de 2025</span>
+                            </div>
+                        </article>
+
+
+                        <!-- PIPEFY PROCESSOS -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/pipefy_logo.jpg" alt="Pipefy"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>Gerente de Processos do Pipefy</h4>
+                                <p>Pipefy</p>
+                                <span>Emitida em out. de 2025</span>
+                            </div>
+                        </article>
+
+
+                        <!-- KMP -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/david_j_anderson__associates_logo.jpg" alt="Kanban University"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>
+                                    Kanban Management Professional
+                                    — KMP
+                                </h4>
+                                <p>Kanban University</p>
+                                <span>Emitida em mai. de 2022</span>
+                            </div>
+                        </article>
+
+
+                        <!-- KMPII -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/david_j_anderson__associates_logo.jpg" alt="Kanban University"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>
+                                    Kanban Systems Improvement
+                                    — KMPII
+                                </h4>
+                                <p>Kanban University</p>
+                                <span>Emitida em mai. de 2022</span>
+                            </div>
+                        </article>
+
+
+                        <!-- COACHING -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/linkedin_logo.jpg" alt="LinkedIn"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>
+                                    Técnicas de Coaching
+                                    para Resultados
+                                </h4>
+                                <p>LinkedIn</p>
+                                <span>Emitida em mai. de 2022</span>
+                            </div>
+                        </article>
+
+
+                        <!-- MANAGEMENT 3.0 -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/management_30_logo.jpg" alt="Management 3.0"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>
+                                    Management 3.0 Fundamentals
+                                    Online Workshop
+                                </h4>
+                                <p>Management 3.0</p>
+                                <span>Emitida em dez. de 2021</span>
+                            </div>
+                        </article>
+
+
+                        <!-- PSM I -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/PSM _logo.jpg" alt="Scrum.org"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>Professional Scrum Master™ I</h4>
+                                <p>Scrum.org</p>
+                                <span>Emitida em jun. de 2020</span>
+                            </div>
+                        </article>
+
+
+                        <!-- DEVOPS -->
+
+                        <article class="certificacao-card">
+                            <div class="certificacao-logo">
+                                <span><img src="imgs/logos/4linux_logo.jpg" alt="4Linux"></span>
+                            </div>
+                            <div class="certificacao-conteudo">
+                                <h4>DevOps Essentials</h4>
+                                <p>4Linux</p>
+                                <span>Emitida em jul. de 2020</span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HABILIDADES
+        ====================================================== -->
+
+        <section id="habilidades" class="secao habilidades">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span>COMPETÊNCIAS</span>
+
+                    <h2>Habilidades</h2>
+
+                    <div class="linha-titulo"></div>
+
+                </div>
+
+
+                <div class="habilidades-grid">
+
+                    <!-- CARD 01 -->
+
+                    <article class="habilidade-card">
+
+                        <div class="icone-habilidade">⚡</div>
+
+                        <h3>Agilidade Corporativa</h3>
+
+                        <p>
+                            Atuação na transformação de processos e modelos de
+                            trabalho, promovendo agilidade, melhoria contínua e
+                            maior previsibilidade nas entregas.
+                        </p>
+
+                        <div class="habilidade-tags">
+                            <span>Scrum</span>
+                            <span>Kanban</span>
+                            <span>SAFe</span>
+                            <span>Flight Levels</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 02 -->
+
+                    <article class="habilidade-card">
+
+                        <div class="icone-habilidade">🎯</div>
+
+                        <h3>Gestão de Produtos Digitais</h3>
+
+                        <p>
+                            Condução de produtos digitais desde o discovery até
+                            a entrega, conectando estratégia, tecnologia e
+                            necessidades do negócio.
+                        </p>
+
+                        <div class="habilidade-tags">
+                            <span>Product Discovery</span>
+                            <span>Lean Inception</span>
+                            <span>Priorização</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 03 -->
+
+                    <article class="habilidade-card">
+
+                        <div class="icone-habilidade">📊</div>
+
+                        <h3>Métricas & Dados</h3>
+
+                        <p>
+                            Utilização de dados e indicadores para identificar
+                            gargalos, acompanhar performance e apoiar decisões
+                            estratégicas.
+                        </p>
+
+                        <div class="habilidade-tags">
+                            <span>DORA Metrics</span>
+                            <span>Jira</span>
+                            <span>Azure DevOps</span>
+                            <span>Power BI</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 04 -->
+
+                    <article class="habilidade-card">
+
+                        <div class="icone-habilidade">👥</div>
+
+                        <h3>Liderança & Times</h3>
+
+                        <p>
+                            Facilitação e desenvolvimento de equipes
+                            multidisciplinares, criando ambientes colaborativos
+                            e orientados à entrega de valor.
+                        </p>
+
+                        <div class="habilidade-tags">
+                            <span>Liderança</span>
+                            <span>Facilitação</span>
+                            <span>Management 3.0</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 05 -->
+
+                    <article class="habilidade-card">
+
+                        <div class="icone-habilidade">🚀</div>
+
+                        <h3>Value Stream & Performance</h3>
+
+                        <p>
+                            Análise e otimização do fluxo de trabalho para
+                            eliminar gargalos, aumentar a vazão e melhorar a
+                            eficiência das equipes.
+                        </p>
+
+                        <div class="habilidade-tags">
+                            <span>Value Stream Mapping</span>
+                            <span>Throughput</span>
+                            <span>Lean</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 06 -->
+
+                    <article class="habilidade-card">
+
+                        <div class="icone-habilidade">🤖</div>
+
+                        <h3>Tecnologia & Inteligência Artificial</h3>
+
+                        <p>
+                            Experiência em projetos de tecnologia e plataformas
+                            de Inteligência Artificial, conectando inovação,
+                            produtos digitais e resultados de negócio.
+                        </p>
+
+                        <div class="habilidade-tags">
+                            <span>Inteligência Artificial</span>
+                            <span>Transformação Digital</span>
+                            <span>Oracle Cloud AI</span>
+                        </div>
+
+                    </article>
+
                 </div>
 
             </div>
