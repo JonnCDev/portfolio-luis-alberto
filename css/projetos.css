@@ -1,0 +1,242 @@
+/* =========================================================
+   PROJETOS
+========================================================= */
+
+.secao-projetos {
+    width: 100%;
+    padding: 110px 5%;
+
+    background: linear-gradient(
+        135deg,
+        rgb(14, 15, 44) 0%,
+        rgb(3, 25, 70) 50%,
+        rgb(0, 0, 0) 100%
+    );
+}
+
+.container-projetos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TÍTULO */
+
+.titulo-projetos {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.titulo-projetos > span {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.titulo-projetos h2 {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: clamp(36px, 5vw, 50px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.titulo-projetos > p {
+    max-width: 700px;
+    margin: 20px auto 0;
+
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.linha-projetos {
+    width: 60px;
+    height: 4px;
+    margin: 20px auto 0;
+
+    background: #0d6efd;
+    border-radius: 10px;
+}
+
+/* GRADE */
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(96, 165, 250, 0.7);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(30, 64, 255, 0.2);
+}
+
+.projeto-topo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    margin-bottom: 16px;
+}
+
+.projeto-empresa {
+    padding: 5px 12px;
+
+    background-color: rgba(96, 165, 250, 0.15);
+    border-radius: 999px;
+
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.projeto-periodo {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.projeto-card h3 {
+    margin: 0 0 4px;
+
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.projeto-papel {
+    margin: 0 0 20px;
+
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* BLOCOS: DESAFIO / SOLUÇÃO / RESULTADO */
+
+.projeto-bloco {
+    margin-bottom: 16px;
+}
+
+.projeto-bloco:last-child {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.projeto-bloco h4 {
+    margin: 0 0 6px;
+
+    color: #60a5fa;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.projeto-bloco p {
+    margin: 0;
+
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* RESULTADOS */
+
+.projeto-resultados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.projeto-resultados li {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 100px;
+    padding: 10px 14px;
+
+    background-color: rgba(30, 64, 255, 0.12);
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    border-radius: 12px;
+}
+
+.projeto-resultados strong {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.projeto-resultados span {
+    margin-top: 2px;
+
+    color: #cbd5e1;
+    font-size: 12px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .secao-projetos {
+        padding: 80px 20px;
+    }
+
+    .titulo-projetos {
+        margin-bottom: 45px;
+    }
+
+    .projeto-card {
+        padding: 24px 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projeto-card {
+        transition: none;
+    }
+}
