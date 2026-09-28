@@ -1,0 +1,542 @@
+/* =========================================================
+   FORMAÇÃO E CERTIFICAÇÕES
+========================================================= */
+
+.secao-formacao {
+
+    width: 100%;
+
+    padding: 110px 5%;
+
+    background: linear-gradient(
+        135deg,
+        rgb(14, 15, 44) 0%,
+        rgb(3, 25, 70) 50%,
+        rgb(0, 0, 0) 100%
+    );
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container-formacao {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.titulo-formacao {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 70px;
+
+}
+
+
+.titulo-formacao > span {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #60a5fa;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.titulo-formacao h2 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(36px, 5vw, 50px);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+
+.titulo-formacao > p {
+
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+.linha-formacao {
+
+    width: 60px;
+
+    height: 4px;
+
+    margin: 20px auto 0;
+
+    background:  #60a5fa;;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================================
+   SUBTÍTULOS
+========================================================= */
+
+.subtitulo-formacao {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.icone-subtitulo {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #eaf3ff;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+
+}
+
+
+.subtitulo-formacao > div > span {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #0d6efd;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.subtitulo-formacao h3 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+}
+
+
+/* =========================================================
+   FORMAÇÃO
+========================================================= */
+
+.bloco-formacao {
+
+    margin-bottom: 75px;
+
+}
+
+
+.formacoes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* CARD DE FORMAÇÃO */
+
+.formacao-card {
+
+    display: flex;
+
+    gap: 25px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(16, 24, 40, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.formacao-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #b9d5fa;
+
+    box-shadow:
+        0 18px 40px rgba(16, 24, 40, 0.10);
+
+}
+
+
+/* LOGO */
+
+.logo-instituicao {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f2f6fc;
+
+    border-radius: 14px;
+
+}
+
+
+.logo-texto {
+
+    color: #0d3b82;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+}
+
+
+/* CONTEÚDO */
+
+.formacao-tipo {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #0d6efd;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.formacao-conteudo h4 {
+
+    margin: 0 0 9px;
+
+    color: #101828;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+}
+
+
+.formacao-conteudo .instituicao {
+
+    margin: 0 0 5px;
+
+    color: #344054;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.formacao-conteudo .periodo {
+
+    color: #667085;
+
+    font-size: 13px;
+
+}
+
+
+.formacao-descricao {
+
+    margin-top: 14px;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   CERTIFICAÇÕES
+========================================================= */
+
+.bloco-certificacoes {
+
+    margin-top: 20px;
+
+}
+
+
+.certificacoes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* CARD */
+
+.certificacao-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-height: 125px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.certificacao-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #b9d5fa;
+
+    box-shadow:
+        0 15px 35px rgba(16, 24, 40, 0.08);
+
+}
+
+
+/* =========================================================
+   LOGO DA CERTIFICAÇÃO
+========================================================= */
+
+.certificacao-logo {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #edf5ff;
+
+    border-radius: 12px;
+
+    color: #0d4fa8;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+}
+
+
+.certificacao-conteudo {
+
+    min-width: 0;
+
+}
+
+
+.certificacao-conteudo h4 {
+
+    margin: 0 0 6px;
+
+    color: #101828;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+}
+
+
+.certificacao-conteudo p {
+
+    margin: 0 0 4px;
+
+    color: #344054;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.certificacao-conteudo > span {
+
+    color: #667085;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .formacoes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .certificacoes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .secao-formacao {
+
+        padding: 80px 20px;
+
+    }
+
+    .titulo-formacao {
+
+        margin-bottom: 50px;
+
+    }
+
+    .formacao-card {
+
+        flex-direction: column;
+
+        padding: 25px;
+
+    }
+
+    .certificacao-card {
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+    }
+
+    .certificacao-logo {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}

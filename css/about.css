@@ -1,0 +1,326 @@
+/* =========================================
+   SEÇÃO "SOBRE MIM"
+========================================= */
+
+.secao-sobre {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 30px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        rgb(14, 15, 44) 0%,
+        rgb(3, 25, 70) 50%,
+        rgb(0, 0, 0) 100%
+    );
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.4fr)
+        minmax(300px, 0.8fr);
+
+    gap: 45px;
+    align-items: center;
+}
+
+/* Caixa do texto */
+
+.caixa-sobre {
+    padding: clamp(25px, 4vw, 45px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(18, 28, 75, 0.82),
+        rgba(4, 15, 48, 0.88)
+    );
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(30, 64, 255, 0.08);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.caixa-sobre:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(96, 165, 250, 0.75);
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, 0.42),
+        0 0 35px rgba(30, 64, 255, 0.3);
+}
+
+/* Título "Sobre mim" */
+
+.caixa-sobre h2 {
+    position: relative;
+
+    margin: 0 0 30px;
+    padding-bottom: 15px;
+
+    color: white;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.caixa-sobre h2::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 65px;
+    height: 4px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #00bfff,
+        #1e40ff
+    );
+}
+
+/* Texto "Sobre mim" */
+
+.caixa-sobre p {
+    margin: 0 0 18px;
+
+    color: #dbe4f0;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.caixa-sobre p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   IMAGEM EM AÇÃO
+========================================= */
+
+.imagem-acao {
+    margin: 0;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+    background-color: rgba(7, 18, 55, 0.85);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.38),
+        0 0 25px rgba(30, 64, 255, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.imagem-acao:hover {
+    transform: translateY(-8px) scale(1.01);
+
+    border-color: rgba(96, 165, 250, 0.7);
+
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.5),
+        0 0 35px rgba(30, 64, 255, 0.25);
+}
+
+.imagem-acao img {
+    width: 100%;
+    height: 520px;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagem-acao figcaption {
+    padding: 16px 20px;
+
+    background-color: rgba(7, 18, 55, 0.98);
+    color: #d1d5db;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* =========================================
+   CARROSSEL DE FOTOS
+========================================= */
+
+.carrossel-janela {
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carrossel-slides img {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    padding: 10px 15px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.seta-esq {
+    left: 10px;
+}
+
+.seta-dir {
+    right: 10px;
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+    .secao-sobre {
+        padding: 80px 25px;
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .imagem-acao {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .imagem-acao img {
+        height: 420px;
+    }
+}
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+    .secao-sobre {
+        min-height: auto;
+        padding: 65px 18px;
+    }
+
+    .sobre-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .caixa-sobre {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .caixa-sobre:hover {
+        transform: translateY(-4px);
+    }
+
+    .caixa-sobre h2 {
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+
+    .caixa-sobre p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .imagem-acao {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .imagem-acao:hover {
+        transform: translateY(-4px);
+    }
+
+    .imagem-acao img {
+        height: 320px;
+    }
+}
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 380px) {
+    .secao-sobre {
+        padding-inline: 14px;
+    }
+
+    .caixa-sobre {
+        padding: 22px 17px;
+    }
+
+    .caixa-sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .imagem-acao img {
+        height: 270px;
+    }
+}
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .caixa-sobre,
+    .imagem-acao,
+    .carrossel-slides {
+        transition: none;
+    }
+}
