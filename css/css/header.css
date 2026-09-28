@@ -1,0 +1,138 @@
+/* =========================================
+   CABEÇALHO / NAVEGAÇÃO
+========================================= */
+
+.cabecalho {
+    width: 100%;
+    padding: 5px 40px;
+    box-sizing: border-box;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.imglogo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.cabecalho nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.infoport {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.infoport li a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+
+.infoport li a:hover {
+    color: #00BFFF;
+    transition: 0.3s;
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+    .cabecalho {
+        padding-inline: 25px;
+    }
+
+    .cabecalho nav {
+        left: auto;
+        right: 25px;
+        transform: none;
+    }
+
+    .infoport {
+        gap: 18px;
+    }
+
+    .infoport li a {
+        font-size: 15px;
+        padding: 8px 4px;
+    }
+}
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 700px) {
+    .cabecalho {
+        padding: 8px 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imglogo img {
+        width: 85px;
+    }
+
+    .cabecalho nav {
+        position: static;
+        transform: none;
+
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .infoport {
+        width: 100%;
+        gap: 5px;
+        justify-content: space-evenly;
+    }
+
+    .infoport li a {
+        padding: 8px 3px;
+        font-size: 11px;
+    }
+}
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 400px) {
+    .cabecalho {
+        padding-inline: 8px;
+    }
+
+    .imglogo img {
+        width: 75px;
+    }
+
+    .infoport {
+        gap: 2px;
+    }
+
+    .infoport li a {
+        font-size: 9px;
+        padding-inline: 2px;
+    }
+}
