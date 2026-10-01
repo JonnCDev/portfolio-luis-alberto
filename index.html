@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/habilidades.css">
     <link rel="stylesheet" href="css/formacao.css">
     <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/scroll.css">
 
     <!-- Build do Tailwind (CLI) -->
     <link rel="stylesheet" href="src/output.css">
@@ -31,16 +34,73 @@
             >
         </a>
     </section>
-        <nav>
-            <ul class="infoport">
-                <li><a href="#sobre">SOBRE MIM</a></li>
-                <li><a href="#formacao">FORMAÇÃO</a></li>
-                <li><a href="#habilidades">HABILIDADES</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-                <li><a href="#contato">CONTATO</a></li>
+       <nav class="menu">
+  <a class="nav-item" href="#sobre">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="8" r="3.5"/>
+  <path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>
+</svg>
+</span>
+    <span class="label">SOBRE MIM</span>
+    <svg class="underline" viewBox="0 0 100 14" preserveAspectRatio="none">
+    <path d="M2 12 Q50 -6 98 12" />
+  </svg>
+  </a>
 
-            </ul>
-        </nav>
+
+  <a class="nav-item" href="#formacao">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2 9l10-4 10 4-10 4-10-4z"/>
+  <path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+  <path d="M22 9v6"/>
+</svg></span>
+    <span class="label">FORMAÇÃO</span>
+    <svg class="underline" viewBox="0 0 100 14" preserveAspectRatio="none">
+    <path d="M2 12 Q50 -6 98 12" />
+  </svg>
+  </a>
+
+
+  <a class="nav-item" href="#habilidades">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M9 6l-6 6 6 6"/>
+  <path d="M15 6l6 6-6 6"/>
+</svg></span>
+    <span class="label">HABILIDADES</span>
+    <svg class="underline" viewBox="0 0 100 14" preserveAspectRatio="none">
+    <path d="M2 12 Q50 -6 98 12" />
+  </svg>
+  </a>
+
+
+  <a class="nav-item" href="#projetos">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="4" width="18" height="13" rx="1"/>
+  <path d="M8 21h8"/>
+  <path d="M12 17v4"/>
+  <path d="M7 8l2.5 2L7 12"/>
+  <path d="M13 12h4"/>
+</svg></span>
+    <span class="label">PROJETOS</span>
+    <svg class="underline" viewBox="0 0 100 14" preserveAspectRatio="none">
+    <path d="M2 12 Q50 -6 98 12" />
+  </svg>
+  </a>
+
+
+  <a class="nav-item" href="#contato">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="5" width="18" height="14" rx="1.5"/>
+  <path d="M3.5 6.5l8.5 6 8.5-6"/>
+</svg></span>
+    <span class="label">CONTATO</span>
+    <svg class="underline" viewBox="0 0 100 14" preserveAspectRatio="none">
+    <path d="M2 12 Q50 -6 98 12" />
+  </svg>
+  </a>
+
+
+</nav>
     </header>
 
     <section id="apresentacao" class="apresentacao">
@@ -94,7 +154,7 @@
                 <div class="conteudo-sobre">
                     <div class="sobre-grid">
 
-                        <article class="caixa-sobre">
+                        <article class="caixa-sobre reveal reveal-esquerda">
                             <span class="subtitulo-secao">
                                 Quem sou
                             </span>
@@ -147,7 +207,7 @@
                             </p>
                         </article>
 
-                        <figure class="imagem-acao carrossel">
+                        <figure class="imagem-acao carrossel reveal reveal-direita">
 
                             <div class="carrossel-janela">
                                 <div class="carrossel-slides">
@@ -174,7 +234,7 @@
 
                 <div id="resultados" class="conteudo-resultados">
 
-                    <div class="titulo-resultados">
+                    <div class="titulo-resultados reveal reveal-cima">
                         <span class="subtitulo-secao">
                             Impacto gerado
                         </span>
@@ -190,7 +250,7 @@
 
                     <div class="lista-resultados">
 
-                        <article class="resultado-card">
+                        <article class="resultado-card reveal reveal-cima">
                             <div class="resultado-icone">
                                 <svg
                                     viewBox="0 0 24 24"
@@ -213,7 +273,7 @@
                             </p>
                         </article>
 
-                        <article class="resultado-card">
+                        <article class="resultado-card reveal reveal-cima reveal-atraso-1">
                             <div class="resultado-icone">
                                 <svg
                                     viewBox="0 0 24 24"
@@ -236,7 +296,7 @@
                             </p>
                         </article>
 
-                        <article class="resultado-card">
+                        <article class="resultado-card reveal reveal-cima reveal-atraso-2">
                             <div class="resultado-icone">
                                 <svg
                                     viewBox="0 0 24 24"
@@ -264,7 +324,7 @@
                             </p>
                         </article>
 
-                        <article class="resultado-card">
+                        <article class="resultado-card reveal reveal-cima reveal-atraso-3">
                             <div class="resultado-icone">
                                 <svg
                                     viewBox="0 0 24 24"
@@ -305,7 +365,7 @@
 
                 <!-- CABEÇALHO DA SEÇÃO -->
 
-                <div class="titulo-formacao">
+                <div class="titulo-formacao reveal reveal-cima">
 
                     <span>TRAJETÓRIA PROFISSIONAL</span>
 
@@ -342,7 +402,7 @@
 
                         <!-- UNIVERSIDADE CATÓLICA DO SALVADOR -->
 
-                        <article class="formacao-card">
+                        <article class="formacao-card reveal reveal-esquerda">
 
                             <div class="logo-instituicao">
                                 <div class="logo-texto">
@@ -380,7 +440,7 @@
 
                         <!-- UNIVERSIDADE SALVADOR -->
 
-                        <article class="formacao-card">
+                        <article class="formacao-card reveal reveal-direita">
 
                             <div class="logo-instituicao">
                                 <div class="logo-texto">
@@ -441,7 +501,7 @@
 
                         <!-- ROVO -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/atlassian_logo.jpg" alt="Atlassian"></span>
                             </div>
@@ -455,7 +515,7 @@
 
                         <!-- ORACLE -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-1">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/oracle_logo.jpg" alt="Oracle"></span>
                             </div>
@@ -472,7 +532,7 @@
 
                         <!-- PIPEFY ADMIN -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-2">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/pipefy_logo.jpg" alt="Pipefy"></span>
                             </div>
@@ -489,7 +549,7 @@
 
                         <!-- PIPEFY PROCESSOS -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-3">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/pipefy_logo.jpg" alt="Pipefy"></span>
                             </div>
@@ -503,7 +563,7 @@
 
                         <!-- KMP -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-4">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/david_j_anderson__associates_logo.jpg" alt="Kanban University"></span>
                             </div>
@@ -520,7 +580,7 @@
 
                         <!-- KMPII -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/david_j_anderson__associates_logo.jpg" alt="Kanban University"></span>
                             </div>
@@ -537,7 +597,7 @@
 
                         <!-- COACHING -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-1">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/linkedin_logo.jpg" alt="LinkedIn"></span>
                             </div>
@@ -554,7 +614,7 @@
 
                         <!-- MANAGEMENT 3.0 -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-2">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/management_30_logo.jpg" alt="Management 3.0"></span>
                             </div>
@@ -571,7 +631,7 @@
 
                         <!-- PSM I -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-3">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/PSM _logo.jpg" alt="Scrum.org"></span>
                             </div>
@@ -585,7 +645,7 @@
 
                         <!-- DEVOPS -->
 
-                        <article class="certificacao-card">
+                        <article class="certificacao-card reveal reveal-cima reveal-atraso-4">
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/4linux_logo.jpg" alt="4Linux"></span>
                             </div>
@@ -613,7 +673,7 @@
 
             <div class="container">
 
-                <div class="titulo-secao">
+                <div class="titulo-secao reveal reveal-cima">
 
                     <span>COMPETÊNCIAS</span>
 
@@ -628,7 +688,7 @@
 
                     <!-- CARD 01 -->
 
-                    <article class="habilidade-card">
+                    <article class="habilidade-card reveal reveal-cima">
 
                         <div class="icone-habilidade">⚡</div>
 
@@ -652,7 +712,7 @@
 
                     <!-- CARD 02 -->
 
-                    <article class="habilidade-card">
+                    <article class="habilidade-card reveal reveal-cima reveal-atraso-1">
 
                         <div class="icone-habilidade">🎯</div>
 
@@ -675,7 +735,7 @@
 
                     <!-- CARD 03 -->
 
-                    <article class="habilidade-card">
+                    <article class="habilidade-card reveal reveal-cima reveal-atraso-2">
 
                         <div class="icone-habilidade">📊</div>
 
@@ -699,7 +759,7 @@
 
                     <!-- CARD 04 -->
 
-                    <article class="habilidade-card">
+                    <article class="habilidade-card reveal reveal-cima">
 
                         <div class="icone-habilidade">👥</div>
 
@@ -722,7 +782,7 @@
 
                     <!-- CARD 05 -->
 
-                    <article class="habilidade-card">
+                    <article class="habilidade-card reveal reveal-cima reveal-atraso-1">
 
                         <div class="icone-habilidade">🚀</div>
 
@@ -745,7 +805,7 @@
 
                     <!-- CARD 06 -->
 
-                    <article class="habilidade-card">
+                    <article class="habilidade-card reveal reveal-cima reveal-atraso-2">
 
                         <div class="icone-habilidade">🤖</div>
 
@@ -779,7 +839,7 @@
 
             <div class="container-projetos">
 
-                <div class="titulo-projetos">
+                <div class="titulo-projetos reveal reveal-cima">
                     <span>CASES</span>
                     <h2>PROJETOS</h2>
                     <p>
@@ -793,7 +853,7 @@
 
                     <!-- PROJETO 01 -->
 
-                    <article class="projeto-card">
+                    <article class="projeto-card reveal reveal-esquerda">
 
                         <header class="projeto-topo">
                             <span class="projeto-empresa">V8.TECH</span>
@@ -827,7 +887,7 @@
 
                     <!-- PROJETO 02 -->
 
-                    <article class="projeto-card">
+                    <article class="projeto-card reveal reveal-direita">
 
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Belasoft</span>
@@ -860,7 +920,7 @@
 
                     <!-- PROJETO 03 -->
 
-                    <article class="projeto-card">
+                    <article class="projeto-card reveal reveal-esquerda">
 
                         <header class="projeto-topo">
                             <span class="projeto-empresa">CREDZ</span>
@@ -894,7 +954,7 @@
 
                     <!-- PROJETO 04 -->
 
-                    <article class="projeto-card">
+                    <article class="projeto-card reveal reveal-direita">
 
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Via Varejo</span>
@@ -927,7 +987,7 @@
 
                     <!-- PROJETO 05 -->
 
-                    <article class="projeto-card">
+                    <article class="projeto-card reveal reveal-esquerda">
 
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Biolab Sanus</span>
@@ -959,7 +1019,7 @@
 
                     <!-- PROJETO 06 -->
 
-                    <article class="projeto-card">
+                    <article class="projeto-card reveal reveal-direita">
 
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Vivo</span>
@@ -994,8 +1054,209 @@
             </div>
 
         </section>
+        
+        <!-- ================================CONTATO===================== -->
+
+        <section id="contato" class="secao-contato">
+
+    <div class="container-contato">
+
+        <!-- Título da seção -->
+        <div class="titulo-contato">
+
+            <span>VAMOS CONVERSAR</span>
+
+            <h2>CONTATO</h2>
+
+            <p>
+                Tem alguma oportunidade, projeto ou desafio?
+                Entre em contato comigo.
+            </p>
+
+            <div class="linha-contato"></div>
+
+        </div>
+
+
+        <!-- Conteúdo principal -->
+        <div class="conteudo-contato">
+
+            <!-- Informações -->
+            <div class="informacoes-contato">
+
+                <h3>Fale comigo</h3>
+
+                <p>
+                    Estou disponível para conversar sobre projetos,
+                    oportunidades e novos desafios.
+                </p>
+
+    
+
+<div class="item-contato">
+    <div class="contato-titulo">
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+        >
+            <rect x="3" y="5" width="18" height="14" rx="1.5"></rect>
+            <path d="M3.5 6.5l8.5 6 8.5-6"></path>
+        </svg>
+
+        <strong>E-mail</strong>
+    </div>
+
+    <a href="mailto:oliv.luis@gmail.com">
+        oliv.luis@gmail.com
+    </a>
+</div>
+
+<div class="item-contato">
+    <div class="contato-titulo">
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+        >
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M7 10v7"></path>
+            <circle cx="7" cy="7" r="0.6" fill="currentColor"></circle>
+            <path d="M11 17v-4.5a2.5 2.5 0 0 1 5 0V17"></path>
+            <path d="M11 10v1"></path>
+        </svg>
+
+        <strong>LinkedIn</strong>
+    </div>
+
+    <a
+        href="https://linkedin.com/in/luis-alberto-oliveira-sm/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Acessar LinkedIn
+    </a>
+</div>
+
+            </div>
+
+
+            <!-- Formulário -->
+            <form class="formulario-contato" id="formulario-contato">
+
+                <div class="campo-formulario">
+                    <label for="nome">Nome</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem</label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Digite sua mensagem"
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
 
     </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+
+            <div class="rodape-topo reveal reveal-cima">
+
+                <div class="rodape-logo">
+                    <img src="imgs/logo_port.png" alt="Logotipo Oficial">
+                </div>
+
+                <nav class="rodape-links">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="rodape-redes">
+                    <h4>Redes sociais</h4>
+                    <div class="rodape-redes-icones">
+                        <a href="https://www.linkedin.com/in/luis-alberto-oliveira-sm/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M7 10v7"/>
+                                <circle cx="7" cy="7" r="0.5" fill="currentColor"/>
+                                <path d="M11 17v-4.5a2.5 2.5 0 0 1 5 0V17"/>
+                                <path d="M11 10v1"/>
+                            </svg>
+                        </a>
+                
+                        <a href="mailto:oliv.luis@gmail.com" aria-label="E-mail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="5" width="18" height="14" rx="1.5"/>
+                                <path d="M3.5 6.5l8.5 6 8.5-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="rodape-divisor"></div>
+
+            <div class="rodape-base">
+                <p>&copy; 2026 Luis Alberto. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
