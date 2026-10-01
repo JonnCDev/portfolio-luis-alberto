@@ -1,0 +1,56 @@
+/* =========================================================
+   EFEITO DE ENTRADA AO ROLAR A PÁGINA
+   Os elementos começam invisíveis e deslocados, e chegam
+   suavemente na posição final quando entram na tela.
+========================================================= */
+
+.reveal {
+    opacity: 0;
+    transition:
+        opacity 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+/* Direções de entrada */
+
+.reveal-cima {
+    transform: translateY(70px);
+}
+
+.reveal-baixo {
+    transform: translateY(-70px);
+}
+
+.reveal-esquerda {
+    transform: translateX(-90px);
+}
+
+.reveal-direita {
+    transform: translateX(90px);
+}
+
+/* Estado visível (classe adicionada via JS) */
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Atraso em cascata para grids de cards */
+
+.reveal-atraso-1 { transition-delay: 0.12s; }
+.reveal-atraso-2 { transition-delay: 0.24s; }
+.reveal-atraso-3 { transition-delay: 0.36s; }
+.reveal-atraso-4 { transition-delay: 0.48s; }
+.reveal-atraso-5 { transition-delay: 0.6s; }
+
+/* Quem prefere menos movimento vê tudo já no lugar */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+}

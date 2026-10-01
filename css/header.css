@@ -29,29 +29,79 @@
     transform: translateX(-50%);
 }
 
-.infoport {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.menu {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.infoport li a {
-    padding: 10px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Helvetica, sans-serif;
+.nav-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
 }
 
-.infoport li a:hover {
-    color: #00BFFF;
-    transition: 0.3s;
+.nav-item:hover {
+  color: #60a5fa;
+  transition: 0.3s;
+}
+
+.nav-item .icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+  color: black;
+}
+
+.nav-item .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item:hover .icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-item .label {
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+.nav-item .underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  overflow: visible;
+}
+
+.nav-item .underline path {
+  fill: none;
+  stroke: #9EA4B7;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  transition: stroke-dashoffset 0.45s ease;
+}
+
+.nav-item:hover .underline path {
+  stroke-dashoffset: 0;
 }
 
 /* =========================================
@@ -69,11 +119,11 @@
         transform: none;
     }
 
-    .infoport {
+    .menu {
         gap: 18px;
     }
 
-    .infoport li a {
+    .nav-item {
         font-size: 15px;
         padding: 8px 4px;
     }
@@ -102,13 +152,13 @@
         margin-top: 5px;
     }
 
-    .infoport {
+    .menu {
         width: 100%;
         gap: 5px;
         justify-content: space-evenly;
     }
 
-    .infoport li a {
+    .nav-item {
         padding: 8px 3px;
         font-size: 11px;
     }
@@ -127,11 +177,11 @@
         width: 75px;
     }
 
-    .infoport {
+    .menu {
         gap: 2px;
     }
 
-    .infoport li a {
+    .nav-item {
         font-size: 9px;
         padding-inline: 2px;
     }
