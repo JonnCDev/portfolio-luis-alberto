@@ -1,6 +1,6 @@
 //====================== JS PARA CLIQUE E DESCIDA SUAVE NOS LINKS DO MENU ======================
 
-const linksMenu = document.querySelectorAll('.infoport a[href^="#"]');
+const linksMenu = document.querySelectorAll('.nav-item[href^="#"], .rodape-links a[href^="#"]');
 
 linksMenu.forEach(function (link) {
     link.addEventListener("click", function (evento) {
@@ -16,6 +16,29 @@ linksMenu.forEach(function (link) {
             });
         }
     });
+});
+
+
+//====================== JS DO EFEITO DE ENTRADA AO ROLAR A PÁGINA ======================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elementosReveal = document.querySelectorAll('.reveal');
+
+    if (!elementosReveal.length) return;
+
+    const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('is-visible');
+                observador.unobserve(entrada.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -60px 0px'
+    });
+
+    elementosReveal.forEach((el) => observador.observe(el));
 });
 
 
