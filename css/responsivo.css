@@ -1,0 +1,477 @@
+/* =========================================================
+   RESPONSIVIDADE (arquivo único)
+   Reúne todos os @media (max-width) do site.
+   Pontos de quebra usados:
+   - até 1000px / 900px  -> tablets
+   - até 768px / 700px / 650px / 600px -> celulares
+   - até 400px / 380px   -> celulares pequenos
+   Carregue DEPOIS dos demais CSS de seção (veja o index.html).
+========================================================= */
+
+/* =========================================================
+   CABEÇALHO / MENU
+========================================================= */
+
+/* Até 900px (tablets) */
+@media (max-width: 900px) {
+    .cabecalho {
+        padding-inline: 25px;
+    }
+
+    .cabecalho nav {
+        left: auto;
+        right: 25px;
+        transform: none;
+    }
+
+    .menu {
+        gap: 16px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 8px 2px;
+    }
+}
+
+/* Até 768px (celulares) */
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 10px 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imglogo img {
+        width: 75px;
+        margin-bottom: 8px;
+    }
+
+    .cabecalho nav {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap; /* Permite que o menu quebre para a linha de baixo organizadamente */
+        justify-content: center;
+        gap: 8px 14px;
+        width: 100%;
+    }
+
+    .nav-item {
+        padding: 2px 4px;
+        font-size: 11px;
+    }
+    
+    .nav-item .icon {
+        display: none;
+    }
+
+    .nav-item .label {
+        white-space: normal;
+    }
+
+    .nav-item .underline {
+        height: 5px;
+    }
+}
+
+/* Até 400px (celulares pequenos) */
+@media (max-width: 400px) {
+    .menu {
+        gap: 6px 10px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   APRESENTAÇÃO (HERO)
+========================================================= */
+
+/* Até 900px (tablets) */
+@media (max-width: 900px) {
+    .conteudo-apresentacao {
+        max-width: 100%;
+    }
+}
+
+/* Até 768px (celulares) */
+@media (max-width: 768px) {
+    .apresentacao {
+        min-height: 100svh;
+        padding: 155px 15px 40px;
+    }
+
+    .foto-perfil img {
+        width: 160px;
+    }
+
+    .textos-apresentacao h1 {
+        font-size: 2.1rem;
+    }
+
+    .textos-apresentacao h2 {
+        font-size: 1rem;
+    }
+
+    .descricao-apresentacao {
+        font-size: 0.9rem;
+    }
+}
+
+/* Até 400px (celulares pequenos) */
+@media (max-width: 400px) {
+    .apresentacao {
+        padding: 145px 10px 30px;
+    }
+
+    .foto-perfil img {
+        width: 140px;
+    }
+
+    .textos-apresentacao h1 {
+        font-size: 1.8rem;
+    }
+
+    .textos-apresentacao h2 {
+        font-size: 0.9rem;
+    }
+
+    .descricao-apresentacao {
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================================
+   SOBRE MIM
+========================================================= */
+
+/* Até 900px (tablets) */
+@media (max-width: 900px) {
+    .secao-sobre {
+        padding: 80px 25px;
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .imagem-acao {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .imagem-acao img {
+        height: 420px;
+    }
+}
+
+/* Até 600px (celulares) */
+@media (max-width: 600px) {
+    .secao-sobre {
+        min-height: auto;
+        padding: 65px 18px;
+    }
+
+    .sobre-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .caixa-sobre {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .caixa-sobre:hover {
+        transform: translateY(-4px);
+    }
+
+    .caixa-sobre h2 {
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+
+    .caixa-sobre p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .imagem-acao {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .imagem-acao:hover {
+        transform: translateY(-4px);
+    }
+
+    .imagem-acao img {
+        height: 320px;
+    }
+}
+
+/* Até 380px (celulares pequenos) */
+@media (max-width: 380px) {
+    .secao-sobre {
+        padding-inline: 14px;
+    }
+
+    .caixa-sobre {
+        padding: 22px 17px;
+    }
+
+    .caixa-sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .imagem-acao img {
+        height: 270px;
+    }
+}
+
+/* =========================================================
+   RESULTADOS
+========================================================= */
+
+/* Até 1000px (tablets) */
+@media (max-width: 1000px) {
+    .lista-resultados {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Até 900px (tablets) */
+@media (max-width: 900px) {
+    .conteudo-resultados {
+        margin-top: 90px;
+    }
+}
+
+/* Até 600px (celulares) */
+@media (max-width: 600px) {
+    .conteudo-resultados {
+        margin-top: 75px;
+    }
+
+    .titulo-resultados {
+        margin-bottom: 35px;
+        padding-inline: 15px;
+    }
+
+    .titulo-resultados h2 {
+        font-size: 1.8rem;
+    }
+
+    .titulo-resultados p {
+        font-size: 0.9rem;
+    }
+
+    .lista-resultados {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .resultado-card {
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    .resultado-card:hover {
+        transform: translateY(-4px);
+    }
+}
+
+/* Até 380px (celulares pequenos) */
+@media (max-width: 380px) {
+    .titulo-resultados h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* =========================================================
+   FORMAÇÃO E CERTIFICAÇÕES
+========================================================= */
+
+/* Até 900px (tablets) */
+@media (max-width: 900px) {
+
+    .formacoes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .certificacoes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* Até 600px (celulares) */
+@media (max-width: 600px) {
+
+    .secao-formacao {
+
+        padding: 80px 20px;
+
+    }
+
+    .titulo-formacao {
+
+        margin-bottom: 50px;
+
+    }
+
+    .formacao-card {
+
+        flex-direction: column;
+
+        padding: 25px;
+
+    }
+
+    .certificacao-card {
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+    }
+
+    .certificacao-logo {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+/* =========================================================
+   HABILIDADES
+========================================================= */
+
+/* Até 1000px (tablets) */
+@media (max-width: 1000px) {
+
+    .habilidades-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* Até 650px (celulares) */
+@media (max-width: 650px) {
+
+    .habilidades {
+        padding: 80px 20px;
+    }
+
+    .habilidades .titulo-secao {
+        margin-bottom: 40px;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .habilidade-card {
+        min-height: auto;
+
+        padding: 28px 25px;
+    }
+
+}
+
+/* =========================================================
+   PROJETOS
+========================================================= */
+
+/* Até 900px (tablets) */
+@media (max-width: 900px) {
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Até 600px (celulares) */
+@media (max-width: 600px) {
+    .secao-projetos {
+        padding: 80px 20px;
+    }
+
+    .titulo-projetos {
+        margin-bottom: 45px;
+    }
+
+    .projeto-card {
+        padding: 24px 20px;
+    }
+}
+
+/* =========================================================
+   CONTATO
+========================================================= */
+
+/* Até 768px (celulares) */
+@media (max-width: 768px) {
+
+    .secao-contato {
+        padding: 70px 20px;
+    }
+
+    .titulo-contato {
+        margin-bottom: 40px;
+    }
+
+    .titulo-contato h2 {
+        font-size: 32px;
+    }
+
+    .conteudo-contato {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .informacoes-contato,
+    .formulario-contato {
+        padding: 25px;
+    }
+
+}
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+/* Até 700px (celulares) */
+@media (max-width: 700px) {
+    .rodape {
+        padding: 45px 25px 20px;
+    }
+
+    .rodape-topo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rodape-base {
+        flex-direction: column;
+        text-align: center;
+    }
+}

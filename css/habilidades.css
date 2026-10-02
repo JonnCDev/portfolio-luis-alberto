@@ -12,6 +12,7 @@
         rgb(0, 0, 0)
     );
 }
+/* Limita a largura do conteúdo */
 .habilidades .container {
     width: 100%;
     max-width: 1200px;
@@ -28,6 +29,7 @@
     margin-bottom: 55px;
 }
 
+/* Subtítulo pequeno acima do título */
 .habilidades .titulo-secao span {
     display: block;
 
@@ -55,6 +57,7 @@
     line-height: 1.2;
 }
 
+/* Linha azul embaixo do título */
 .habilidades .linha-titulo {
     width: 60px;
     height: 4px;
@@ -65,7 +68,6 @@
 
     border-radius: 10px;
 }
-
 
 /* =========================================================
    GRID
@@ -82,7 +84,6 @@
 
     align-items: stretch;
 }
-
 
 /* =========================================================
    CARD
@@ -112,7 +113,6 @@
         border-color 0.35s ease;
 }
 
-
 /* Barra lateral */
 
 .habilidade-card::before {
@@ -133,7 +133,6 @@
     transition: height 0.35s ease;
 }
 
-
 /* Hover */
 
 .habilidade-card:hover {
@@ -148,7 +147,6 @@
 .habilidade-card:hover::before {
     height: 100%;
 }
-
 
 /* =========================================================
    ÍCONE
@@ -181,7 +179,6 @@
     background: #e0eeff;
 }
 
-
 /* =========================================================
    TÍTULO DO CARD
 ========================================================= */
@@ -198,7 +195,6 @@
     line-height: 1.35;
 }
 
-
 /* =========================================================
    DESCRIÇÃO
 ========================================================= */
@@ -212,7 +208,6 @@
 
     line-height: 1.7;
 }
-
 
 /* =========================================================
    TAGS
@@ -256,46 +251,4 @@
     background: #edf5ff;
 
     color: #0958ca;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-    .habilidades-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-}
-
-
-/* =========================================================
-   CELULAR
-========================================================= */
-
-@media (max-width: 650px) {
-
-    .habilidades {
-        padding: 80px 20px;
-    }
-
-    .habilidades .titulo-secao {
-        margin-bottom: 40px;
-    }
-
-    .habilidades-grid {
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-    .habilidade-card {
-        min-height: auto;
-
-        padding: 28px 25px;
-    }
-
 }

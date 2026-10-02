@@ -16,7 +16,6 @@
     );
 }
 
-
 /* =========================================================
    CONTAINER
 ========================================================= */
@@ -30,7 +29,6 @@
     margin: 0 auto;
 
 }
-
 
 /* =========================================================
    TÍTULO
@@ -46,7 +44,7 @@
 
 }
 
-
+/* Subtítulo pequeno acima do título */
 .titulo-formacao > span {
 
     display: block;
@@ -63,7 +61,6 @@
 
 }
 
-
 .titulo-formacao h2 {
 
     margin: 0;
@@ -77,7 +74,6 @@
     line-height: 1.2;
 
 }
-
 
 .titulo-formacao > p {
 
@@ -93,7 +89,6 @@
 
 }
 
-
 .linha-formacao {
 
     width: 60px;
@@ -107,7 +102,6 @@
     border-radius: 10px;
 
 }
-
 
 /* =========================================================
    SUBTÍTULOS
@@ -125,7 +119,7 @@
 
 }
 
-
+/* Ícone (emoji) ao lado do subtítulo */
 .icone-subtitulo {
 
     width: 50px;
@@ -148,7 +142,6 @@
 
 }
 
-
 .subtitulo-formacao > div > span {
 
     display: block;
@@ -165,7 +158,6 @@
 
 }
 
-
 .subtitulo-formacao h3 {
 
     margin: 0;
@@ -175,7 +167,6 @@
     font-size: 25px;
 
 }
-
 
 /* =========================================================
    FORMAÇÃO
@@ -187,7 +178,7 @@
 
 }
 
-
+/* Grade de 2 colunas dos cursos */
 .formacoes-grid {
 
     display: grid;
@@ -197,7 +188,6 @@
     gap: 25px;
 
 }
-
 
 /* CARD DE FORMAÇÃO */
 
@@ -225,7 +215,7 @@
 
 }
 
-
+/* Sobe ao passar o mouse */
 .formacao-card:hover {
 
     transform: translateY(-6px);
@@ -236,7 +226,6 @@
         0 18px 40px rgba(16, 24, 40, 0.10);
 
 }
-
 
 /* LOGO */
 
@@ -260,7 +249,7 @@
 
 }
 
-
+/* Conteúdo dentro do quadrado do logo */
 .logo-texto {
 
     color: #0d3b82;
@@ -272,7 +261,6 @@
     text-align: center;
 
 }
-
 
 /* CONTEÚDO */
 
@@ -294,7 +282,7 @@
 
 }
 
-
+/* Textos do card: curso, instituição, período e descrição */
 .formacao-conteudo h4 {
 
     margin: 0 0 9px;
@@ -306,7 +294,6 @@
     line-height: 1.4;
 
 }
-
 
 .formacao-conteudo .instituicao {
 
@@ -320,7 +307,6 @@
 
 }
 
-
 .formacao-conteudo .periodo {
 
     color: #667085;
@@ -328,7 +314,6 @@
     font-size: 13px;
 
 }
-
 
 .formacao-descricao {
 
@@ -342,7 +327,6 @@
 
 }
 
-
 /* =========================================================
    CERTIFICAÇÕES
 ========================================================= */
@@ -353,7 +337,7 @@
 
 }
 
-
+/* Grade de 2 colunas das certificações */
 .certificacoes-grid {
 
     display: grid;
@@ -363,7 +347,6 @@
     gap: 18px;
 
 }
-
 
 /* CARD */
 
@@ -392,7 +375,7 @@
 
 }
 
-
+/* Sobe ao passar o mouse */
 .certificacao-card:hover {
 
     transform: translateY(-5px);
@@ -403,7 +386,6 @@
         0 15px 35px rgba(16, 24, 40, 0.08);
 
 }
-
 
 /* =========================================================
    LOGO DA CERTIFICAÇÃO
@@ -437,13 +419,12 @@
 
 }
 
-
+/* Textos do card de certificação */
 .certificacao-conteudo {
 
     min-width: 0;
 
 }
-
 
 .certificacao-conteudo h4 {
 
@@ -457,7 +438,6 @@
 
 }
 
-
 .certificacao-conteudo p {
 
     margin: 0 0 4px;
@@ -470,73 +450,10 @@
 
 }
 
-
 .certificacao-conteudo > span {
 
     color: #667085;
 
     font-size: 12px;
-
-}
-
-
-/* =========================================================
-   RESPONSIVIDADE
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .formacoes-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .certificacoes-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .secao-formacao {
-
-        padding: 80px 20px;
-
-    }
-
-    .titulo-formacao {
-
-        margin-bottom: 50px;
-
-    }
-
-    .formacao-card {
-
-        flex-direction: column;
-
-        padding: 25px;
-
-    }
-
-    .certificacao-card {
-
-        align-items: flex-start;
-
-        padding: 20px;
-
-    }
-
-    .certificacao-logo {
-
-        width: 50px;
-
-        height: 50px;
-
-    }
 
 }

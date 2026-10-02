@@ -14,11 +14,13 @@
     );
 }
 
+/* Limita a largura do conteúdo */
 .container-contato {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Título da seção */
 .titulo-contato {
     text-align: center;
     margin-bottom: 60px;
@@ -73,7 +75,6 @@
     
 }
 
-
 /* =====================================================
    INFORMAÇÕES DE CONTATO
 ====================================================== */
@@ -93,12 +94,12 @@
         box-shadow 0.3s ease;
 }
 
+/* Textos da caixa de informações */
 .informacoes-contato h3 {
     font-size: 28px;
     margin-bottom: 15px;
     color: #ffffff;
 }
-
 
 .informacoes-contato > p {
     line-height: 1.6;
@@ -106,6 +107,7 @@
     color: #cbd5e1;
 }
 
+/* Cada contato (e-mail, LinkedIn) */
 .item-contato {
     display: flex;
     flex-direction: column;
@@ -128,7 +130,6 @@
     color: #3b82f6;
 }
 
-
 /* =====================================================
    FORMULÁRIO
 ====================================================== */
@@ -148,6 +149,7 @@
         box-shadow 0.3s ease;
 }
 
+/* Cada campo do formulário (rótulo + campo) */
 .campo-formulario {
     display: flex;
     flex-direction: column;
@@ -159,6 +161,7 @@
     font-weight: 600;
 }
 
+/* Estilo dos campos de texto */
 .campo-formulario input,
 .campo-formulario textarea {
     width: 100%;
@@ -178,6 +181,7 @@
     resize: vertical;
 }
 
+/* Botão de enviar */
 .formulario-contato button {
     width: 100%;
     padding: 14px;
@@ -208,7 +212,6 @@
     text-decoration: underline;
 }
 
-
 /* Campos do formulário */
 .campo-formulario input,
 .campo-formulario textarea {
@@ -222,7 +225,6 @@
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
-
 
 /* Botão */
 .formulario-contato button {
@@ -239,6 +241,7 @@
     transform: translateY(0);
 }
 
+/* Ícone + nome do contato */
 .contato-titulo {
     display: flex;
     align-items: center;
@@ -253,32 +256,13 @@
     color: #fff;
     stroke: #fff;
 }
-/* =====================================================
-   RESPONSIVIDADE
-====================================================== */
 
-@media (max-width: 768px) {
-
-    .secao-contato {
-        padding: 70px 20px;
-    }
-
-    .titulo-contato {
-        margin-bottom: 40px;
-    }
-
-    .titulo-contato h2 {
-        font-size: 32px;
-    }
-
-    .conteudo-contato {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .informacoes-contato,
-    .formulario-contato {
-        padding: 25px;
-    }
-
+/* Campo escondido anti-spam (só robôs preenchem) */
+.formulario-contato .campo-oculto {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
 }

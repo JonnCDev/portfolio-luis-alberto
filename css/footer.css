@@ -14,6 +14,7 @@
     );
 }
 
+/* Limita a largura do conteúdo */
 .rodape-container {
     width: 100%;
     max-width: 1200px;
@@ -55,6 +56,7 @@
     text-transform: uppercase;
 }
 
+/* Lista de links em coluna */
 .rodape-links ul {
     margin: 0;
     padding: 0;
@@ -65,6 +67,7 @@
     gap: 10px;
 }
 
+/* Estilo dos links do rodapé */
 .rodape-links a {
     color: #cbd5e1;
     font-size: 14px;
@@ -83,6 +86,7 @@
     gap: 14px;
 }
 
+/* Botões quadrados dos ícones */
 .rodape-redes-icones a {
     display: flex;
     align-items: center;
@@ -139,6 +143,7 @@
     gap: 10px;
 }
 
+/* Texto de copyright */
 .rodape-base p {
     margin: 0;
 
@@ -149,24 +154,4 @@
 .rodape-feito {
     color: #64748b;
     font-size: 12px;
-}
-
-/* =========================================================
-   RESPONSIVIDADE
-========================================================= */
-
-@media (max-width: 700px) {
-    .rodape {
-        padding: 45px 25px 20px;
-    }
-
-    .rodape-topo {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .rodape-base {
-        flex-direction: column;
-        text-align: center;
-    }
 }
