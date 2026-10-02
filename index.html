@@ -6,19 +6,21 @@
     <title>Luis Alberto - SCRUM MASTER | AGILE COACH & MASTER</title>
 
     <!-- Estilos organizados por categoria -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/shared.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/results.css">
-    <link rel="stylesheet" href="css/habilidades.css">
-    <link rel="stylesheet" href="css/formacao.css">
-    <link rel="stylesheet" href="css/projetos.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/base.css">         <!-- Reset e fundo da página -->
+    <link rel="stylesheet" href="css/header.css">       <!-- Cabeçalho e menu -->
+    <link rel="stylesheet" href="css/hero.css">         <!-- Apresentação (foto e nome) -->
+    <link rel="stylesheet" href="css/shared.css">       <!-- Estilos usados em mais de uma seção -->
+    <link rel="stylesheet" href="css/about.css">        <!-- Sobre mim + carrossel -->
+    <link rel="stylesheet" href="css/results.css">      <!-- Principais resultados -->
+    <link rel="stylesheet" href="css/habilidades.css">  <!-- Habilidades -->
+    <link rel="stylesheet" href="css/formacao.css">     <!-- Formação e certificações -->
+    <link rel="stylesheet" href="css/projetos.css">     <!-- Projetos (cases) -->
+    <link rel="stylesheet" href="css/contato.css">      <!-- Contato e formulário -->
+    <link rel="stylesheet" href="css/footer.css">       <!-- Rodapé -->
+    <link rel="stylesheet" href="css/responsivo.css">   <!-- Responsividade (todos os @media) - deve vir depois dos CSS acima -->
+    <link rel="stylesheet" href="css/scroll.css">       <!-- Animação de entrada ao rolar -->
 
+    <!-- Ícone da aba do navegador -->
     <link rel="icon" type="image/png" href="imgs/favicon-32x32.png">
 
     <!-- Build do Tailwind (CLI) -->
@@ -27,7 +29,11 @@
 
 <body>
 
+    <!-- Obs.: as classes "reveal ..." fazem o elemento aparecer animado ao rolar a página (CSS: scroll.css | JS: script.js) -->
+
+   <!-- CABEÇALHO: logo + menu de navegação (fixo no topo) -->
    <header class="cabecalho">
+    <!-- Logo (clique volta ao topo) -->
     <section class="imglogo">
         <a href="#apresentacao">
             <img
@@ -36,7 +42,9 @@
             >
         </a>
     </section>
+       <!-- Menu: cada link tem ícone (aparece no hover), texto e sublinhado em SVG -->
        <nav class="menu">
+  <!-- Link: Sobre mim -->
   <a class="nav-item" href="#sobre">
     <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <circle cx="12" cy="8" r="3.5"/>
@@ -50,6 +58,7 @@
   </a>
 
 
+  <!-- Link: Formação -->
   <a class="nav-item" href="#formacao">
     <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M2 9l10-4 10 4-10 4-10-4z"/>
@@ -63,6 +72,7 @@
   </a>
 
 
+  <!-- Link: Habilidades -->
   <a class="nav-item" href="#habilidades">
     <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M9 6l-6 6 6 6"/>
@@ -75,6 +85,7 @@
   </a>
 
 
+  <!-- Link: Projetos -->
   <a class="nav-item" href="#projetos">
     <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <rect x="3" y="4" width="18" height="13" rx="1"/>
@@ -90,6 +101,7 @@
   </a>
 
 
+  <!-- Link: Contato -->
   <a class="nav-item" href="#contato">
     <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <rect x="3" y="5" width="18" height="14" rx="1.5"/>
@@ -105,10 +117,12 @@
 </nav>
     </header>
 
+    <!-- APRESENTAÇÃO (HERO): foto, nome e resumo -->
     <section id="apresentacao" class="apresentacao">
 
         <!-- Conteúdo principal -->
         <div class="conteudo-apresentacao">
+            <!-- Foto de perfil -->
             <figure class="foto-perfil">
                 <img
                     src="imgs/foto_de_perfil.png"
@@ -116,16 +130,19 @@
                 >
             </figure>
 
+            <!-- Nome, cargos e resumo -->
             <div class="textos-apresentacao">
                 <h1>
                     Olá, sou
                     <span class="nomedestaque">Luis Alberto</span>
                 </h1>
 
+                <!-- Cargos -->
                 <h2>
                     Agile Coach | Agile Master | Scrum Master
                 </h2>
 
+                <!-- Resumo curto -->
                 <div class="descricao-apresentacao">
                     <p>
                         Faço a agilidade sair do quadro e chegar ao resultado.
@@ -141,6 +158,7 @@
 
     </section>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
         <!-- =====================================================
@@ -156,6 +174,7 @@
                 <div class="conteudo-sobre">
                     <div class="sobre-grid">
 
+                        <!-- Caixa de texto "Sobre mim" -->
                         <article class="caixa-sobre reveal reveal-esquerda">
                             <span class="subtitulo-secao">
                                 Quem sou
@@ -209,9 +228,12 @@
                             </p>
                         </article>
 
+                        <!-- Carrossel de fotos (os botões são controlados pelo script.js) -->
                         <figure class="imagem-acao carrossel reveal reveal-direita">
 
+                            <!-- Janela visível do carrossel -->
                             <div class="carrossel-janela">
+                                <!-- Fotos lado a lado (o JS desliza o conjunto) -->
                                 <div class="carrossel-slides">
                                     <img src="imgs/carrossel/foto_em_acao.jpg" alt="Luis Alberto em Atuação">
                                     <img src="imgs/carrossel/grupo1.jpeg" alt="Luis Alberto atuando em equipe">
@@ -220,10 +242,12 @@
                                     <img src="imgs/carrossel/alberto_premio.jpeg" alt="Luis Alberto recebendo prêmio">
                                 </div>
 
+                                <!-- Setas: foto anterior / próxima -->
                                 <button class="seta seta-esq" aria-label="Foto anterior">&#10094;</button>
                                 <button class="seta seta-dir" aria-label="Próxima foto">&#10095;</button>
                             </div>
 
+                            <!-- Legenda da foto -->
                             <figcaption>
                                 Conectando pessoas, estratégia e resultados.
                             </figcaption>
@@ -236,6 +260,7 @@
 
                 <div id="resultados" class="conteudo-resultados">
 
+                    <!-- Título da seção -->
                     <div class="titulo-resultados reveal reveal-cima">
                         <span class="subtitulo-secao">
                             Impacto gerado
@@ -250,8 +275,10 @@
                         </p>
                     </div>
 
+                    <!-- Grade com os 4 cards de resultado -->
                     <div class="lista-resultados">
 
+                        <!-- Card 1: throughput -->
                         <article class="resultado-card reveal reveal-cima">
                             <div class="resultado-icone">
                                 <svg
@@ -275,6 +302,7 @@
                             </p>
                         </article>
 
+                        <!-- Card 2: redução de bugs -->
                         <article class="resultado-card reveal reveal-cima reveal-atraso-1">
                             <div class="resultado-icone">
                                 <svg
@@ -298,6 +326,7 @@
                             </p>
                         </article>
 
+                        <!-- Card 3: evolução em IA -->
                         <article class="resultado-card reveal reveal-cima reveal-atraso-2">
                             <div class="resultado-icone">
                                 <svg
@@ -326,6 +355,7 @@
                             </p>
                         </article>
 
+                        <!-- Card 4: produto em produção -->
                         <article class="resultado-card reveal reveal-cima reveal-atraso-3">
                             <div class="resultado-icone">
                                 <svg
@@ -400,18 +430,21 @@
                     </div>
 
 
+                    <!-- Grade de cards de formação -->
                     <div class="formacoes-grid">
 
                         <!-- UNIVERSIDADE CATÓLICA DO SALVADOR -->
 
                         <article class="formacao-card reveal reveal-esquerda">
 
+                            <!-- Logo da instituição -->
                             <div class="logo-instituicao">
                                 <div class="logo-texto">
                                     <img src="imgs/logos/ucsal_logo.png" alt="Universidade Católica do Salvador">
                                 </div>
                             </div>
 
+                            <!-- Dados do curso -->
                             <div class="formacao-conteudo">
 
                                 <span class="formacao-tipo">
@@ -444,12 +477,14 @@
 
                         <article class="formacao-card reveal reveal-direita">
 
+                            <!-- Logo da instituição -->
                             <div class="logo-instituicao">
                                 <div class="logo-texto">
                                     <img src="imgs/logos/universidade_salvador_logo.jpg" alt="Universidade Salvador">
                                 </div>
                             </div>
 
+                            <!-- Dados do curso -->
                             <div class="formacao-conteudo">
 
                                 <span class="formacao-tipo">
@@ -499,14 +534,17 @@
                     </div>
 
 
+                    <!-- Grade de cards de certificação -->
                     <div class="certificacoes-grid">
 
                         <!-- ROVO -->
 
                         <article class="certificacao-card reveal reveal-cima">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/atlassian_logo.jpg" alt="Atlassian"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>Rovo Fundamentals</h4>
                                 <p>Atlassian</p>
@@ -518,9 +556,11 @@
                         <!-- ORACLE -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-1">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/oracle_logo.jpg" alt="Oracle"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>
                                     Oracle Cloud Infrastructure
@@ -535,9 +575,11 @@
                         <!-- PIPEFY ADMIN -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-2">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/pipefy_logo.jpg" alt="Pipefy"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>
                                     Certificação de Administrador
@@ -552,9 +594,11 @@
                         <!-- PIPEFY PROCESSOS -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-3">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/pipefy_logo.jpg" alt="Pipefy"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>Gerente de Processos do Pipefy</h4>
                                 <p>Pipefy</p>
@@ -566,9 +610,11 @@
                         <!-- KMP -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-4">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/david_j_anderson__associates_logo.jpg" alt="Kanban University"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>
                                     Kanban Management Professional
@@ -583,9 +629,11 @@
                         <!-- KMPII -->
 
                         <article class="certificacao-card reveal reveal-cima">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/david_j_anderson__associates_logo.jpg" alt="Kanban University"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>
                                     Kanban Systems Improvement
@@ -600,9 +648,11 @@
                         <!-- COACHING -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-1">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/linkedin_logo.jpg" alt="LinkedIn"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>
                                     Técnicas de Coaching
@@ -617,9 +667,11 @@
                         <!-- MANAGEMENT 3.0 -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-2">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/management_30_logo.jpg" alt="Management 3.0"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>
                                     Management 3.0 Fundamentals
@@ -634,9 +686,11 @@
                         <!-- PSM I -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-3">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/PSM _logo.jpg" alt="Scrum.org"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>Professional Scrum Master™ I</h4>
                                 <p>Scrum.org</p>
@@ -648,9 +702,11 @@
                         <!-- DEVOPS -->
 
                         <article class="certificacao-card reveal reveal-cima reveal-atraso-4">
+                            <!-- Logo de quem emitiu -->
                             <div class="certificacao-logo">
                                 <span><img src="imgs/logos/4linux_logo.jpg" alt="4Linux"></span>
                             </div>
+                            <!-- Nome, emissor e data -->
                             <div class="certificacao-conteudo">
                                 <h4>DevOps Essentials</h4>
                                 <p>4Linux</p>
@@ -675,6 +731,7 @@
 
             <div class="container">
 
+                <!-- Título da seção -->
                 <div class="titulo-secao reveal reveal-cima">
 
                     <span>COMPETÊNCIAS</span>
@@ -686,12 +743,14 @@
                 </div>
 
 
+                <!-- Grade de cards de habilidades -->
                 <div class="habilidades-grid">
 
                     <!-- CARD 01 -->
 
                     <article class="habilidade-card reveal reveal-cima">
 
+                        <!-- Ícone do card -->
                         <div class="icone-habilidade">⚡</div>
 
                         <h3>Agilidade Corporativa</h3>
@@ -702,6 +761,7 @@
                             maior previsibilidade nas entregas.
                         </p>
 
+                        <!-- Tags (ferramentas e temas) -->
                         <div class="habilidade-tags">
                             <span>Scrum</span>
                             <span>Kanban</span>
@@ -716,6 +776,7 @@
 
                     <article class="habilidade-card reveal reveal-cima reveal-atraso-1">
 
+                        <!-- Ícone do card -->
                         <div class="icone-habilidade">🎯</div>
 
                         <h3>Gestão de Produtos Digitais</h3>
@@ -726,6 +787,7 @@
                             necessidades do negócio.
                         </p>
 
+                        <!-- Tags (ferramentas e temas) -->
                         <div class="habilidade-tags">
                             <span>Product Discovery</span>
                             <span>Lean Inception</span>
@@ -739,6 +801,7 @@
 
                     <article class="habilidade-card reveal reveal-cima reveal-atraso-2">
 
+                        <!-- Ícone do card -->
                         <div class="icone-habilidade">📊</div>
 
                         <h3>Métricas & Dados</h3>
@@ -749,6 +812,7 @@
                             estratégicas.
                         </p>
 
+                        <!-- Tags (ferramentas e temas) -->
                         <div class="habilidade-tags">
                             <span>DORA Metrics</span>
                             <span>Jira</span>
@@ -763,6 +827,7 @@
 
                     <article class="habilidade-card reveal reveal-cima">
 
+                        <!-- Ícone do card -->
                         <div class="icone-habilidade">👥</div>
 
                         <h3>Liderança & Times</h3>
@@ -773,6 +838,7 @@
                             e orientados à entrega de valor.
                         </p>
 
+                        <!-- Tags (ferramentas e temas) -->
                         <div class="habilidade-tags">
                             <span>Liderança</span>
                             <span>Facilitação</span>
@@ -786,6 +852,7 @@
 
                     <article class="habilidade-card reveal reveal-cima reveal-atraso-1">
 
+                        <!-- Ícone do card -->
                         <div class="icone-habilidade">🚀</div>
 
                         <h3>Value Stream & Performance</h3>
@@ -796,6 +863,7 @@
                             eficiência das equipes.
                         </p>
 
+                        <!-- Tags (ferramentas e temas) -->
                         <div class="habilidade-tags">
                             <span>Value Stream Mapping</span>
                             <span>Throughput</span>
@@ -809,6 +877,7 @@
 
                     <article class="habilidade-card reveal reveal-cima reveal-atraso-2">
 
+                        <!-- Ícone do card -->
                         <div class="icone-habilidade">🤖</div>
 
                         <h3>Tecnologia & Inteligência Artificial</h3>
@@ -819,6 +888,7 @@
                             produtos digitais e resultados de negócio.
                         </p>
 
+                        <!-- Tags (ferramentas e temas) -->
                         <div class="habilidade-tags">
                             <span>Inteligência Artificial</span>
                             <span>Transformação Digital</span>
@@ -841,6 +911,7 @@
 
             <div class="container-projetos">
 
+                <!-- Título da seção -->
                 <div class="titulo-projetos reveal reveal-cima">
                     <span>CASES</span>
                     <h2>PROJETOS</h2>
@@ -851,30 +922,36 @@
                     <div class="linha-projetos"></div>
                 </div>
 
+                <!-- Grade de cards de projetos -->
                 <div class="projetos-grid">
 
                     <!-- PROJETO 01 -->
 
                     <article class="projeto-card reveal reveal-esquerda">
 
+                        <!-- Empresa e período -->
                         <header class="projeto-topo">
                             <span class="projeto-empresa">V8.TECH</span>
                             <span class="projeto-periodo">abr. 2025 — mai. 2026</span>
                         </header>
 
+                        <!-- Nome do projeto e função exercida -->
                         <h3>Plataforma de IA Accelerate</h3>
                         <p class="projeto-papel">Scrum Master | Product Owner</p>
 
+                        <!-- Desafio -->
                         <div class="projeto-bloco">
                             <h4>Desafio</h4>
                             <p>Acelerar o ciclo de desenvolvimento de uma solução de Inteligência Artificial e levar a primeira versão para produção.</p>
                         </div>
 
+                        <!-- Solução -->
                         <div class="projeto-bloco">
                             <h4>Solução</h4>
                             <p>Atuação como Scrum Master, Coach e Product Owner: discovery, planejamento e entregas até o primeiro release, priorização contínua do backlog e implantação de DORA Metrics.</p>
                         </div>
 
+                        <!-- Resultado -->
                         <div class="projeto-bloco">
                             <h4>Resultado</h4>
                             <ul class="projeto-resultados">
@@ -891,24 +968,29 @@
 
                     <article class="projeto-card reveal reveal-direita">
 
+                        <!-- Empresa e período -->
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Belasoft</span>
                             <span class="projeto-periodo">fev. 2024 — mar. 2025</span>
                         </header>
 
+                        <!-- Nome do projeto e função exercida -->
                         <h3>Software para o setor farmacêutico</h3>
                         <p class="projeto-papel">Agile Master</p>
 
+                        <!-- Desafio -->
                         <div class="projeto-bloco">
                             <h4>Desafio</h4>
                             <p>Entregar com qualidade e rastreabilidade em um ambiente altamente regulado, com um squad de 6 desenvolvedores.</p>
                         </div>
 
+                        <!-- Solução -->
                         <div class="projeto-bloco">
                             <h4>Solução</h4>
                             <p>Implementação e evolução do Scrum, Definition of Done rigorosa, facilitação das cerimônias e refinamento do backlog com critérios de aceite claros.</p>
                         </div>
 
+                        <!-- Resultado -->
                         <div class="projeto-bloco">
                             <h4>Resultado</h4>
                             <ul class="projeto-resultados">
@@ -924,24 +1006,29 @@
 
                     <article class="projeto-card reveal reveal-esquerda">
 
+                        <!-- Empresa e período -->
                         <header class="projeto-topo">
                             <span class="projeto-empresa">CREDZ</span>
                             <span class="projeto-periodo">fev. 2023 — fev. 2024</span>
                         </header>
 
+                        <!-- Nome do projeto e função exercida -->
                         <h3>Engenharia evolutiva e Segurança da Informação</h3>
                         <p class="projeto-papel">Agile Master | SM/PO</p>
 
+                        <!-- Desafio -->
                         <div class="projeto-bloco">
                             <h4>Desafio</h4>
                             <p>Melhorar o fluxo de valor em uma fintech com alta exigência de compliance e disponibilidade.</p>
                         </div>
 
+                        <!-- Solução -->
                         <div class="projeto-bloco">
                             <h4>Solução</h4>
                             <p>Agile Master na engenharia e SM/PO na Segurança da Informação, com ciclos de Team Building e retrospectivas estruturadas.</p>
                         </div>
 
+                        <!-- Resultado -->
                         <div class="projeto-bloco">
                             <h4>Resultado</h4>
                             <ul class="projeto-resultados">
@@ -958,24 +1045,29 @@
 
                     <article class="projeto-card reveal reveal-direita">
 
+                        <!-- Empresa e período -->
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Via Varejo</span>
                             <span class="projeto-periodo">ago. 2021 — fev. 2023</span>
                         </header>
 
+                        <!-- Nome do projeto e função exercida -->
                         <h3>Checkout, CART, Core APP e Acessibilidade</h3>
                         <p class="projeto-papel">Scrum Master</p>
 
+                        <!-- Desafio -->
                         <div class="projeto-bloco">
                             <h4>Desafio</h4>
                             <p>Dar visibilidade às dependências e reduzir gargalos em um dos maiores ecossistemas de varejo digital do Brasil.</p>
                         </div>
 
+                        <!-- Solução -->
                         <div class="projeto-bloco">
                             <h4>Solução</h4>
                             <p>Migração cross-times de Scrum para Kanban, facilitação de Product Discovery, Lean Inception, Design Thinking e Design Sprint, e acompanhamento de CFD, Lead Time e Cycle Time.</p>
                         </div>
 
+                        <!-- Resultado -->
                         <div class="projeto-bloco">
                             <h4>Resultado</h4>
                             <ul class="projeto-resultados">
@@ -991,24 +1083,29 @@
 
                     <article class="projeto-card reveal reveal-esquerda">
 
+                        <!-- Empresa e período -->
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Biolab Sanus</span>
                             <span class="projeto-periodo">abr. 2017 — ago. 2021</span>
                         </header>
 
+                        <!-- Nome do projeto e função exercida -->
                         <h3>Cultura ágil na área comercial</h3>
                         <p class="projeto-papel">Agile Master</p>
 
+                        <!-- Desafio -->
                         <div class="projeto-bloco">
                             <h4>Desafio</h4>
                             <p>Introduzir e consolidar a cultura ágil em uma área não tecnológica, acostumada a processos tradicionais.</p>
                         </div>
 
+                        <!-- Solução -->
                         <div class="projeto-bloco">
                             <h4>Solução</h4>
                             <p>Kanban no lugar de controles manuais, painéis de KPIs comerciais e princípios Lean para reduzir desperdícios.</p>
                         </div>
 
+                        <!-- Resultado -->
                         <div class="projeto-bloco">
                             <h4>Resultado</h4>
                             <ul class="projeto-resultados">
@@ -1023,24 +1120,29 @@
 
                     <article class="projeto-card reveal reveal-direita">
 
+                        <!-- Empresa e período -->
                         <header class="projeto-topo">
                             <span class="projeto-empresa">Vivo</span>
                             <span class="projeto-periodo">out. 2008 — mar. 2014</span>
                         </header>
 
+                        <!-- Nome do projeto e função exercida -->
                         <h3>Liderança de TI e datacenter</h3>
                         <p class="projeto-papel">Coordenador de TI | Agile Master</p>
 
+                        <!-- Desafio -->
                         <div class="projeto-bloco">
                             <h4>Desafio</h4>
                             <p>Liderar uma equipe remota de abrangência nacional e sustentar sistemas críticos e datacenter de grande volume.</p>
                         </div>
 
+                        <!-- Solução -->
                         <div class="projeto-bloco">
                             <h4>Solução</h4>
                             <p>OKRs e KPIs, projetos conduzidos com PMBOK, gestão de contratos com fornecedores e eliminação de gargalos entre stakeholders e equipe técnica.</p>
                         </div>
 
+                        <!-- Resultado -->
                         <div class="projeto-bloco">
                             <h4>Resultado</h4>
                             <ul class="projeto-resultados">
@@ -1095,6 +1197,7 @@
 
     
 
+<!-- E-mail -->
 <div class="item-contato">
     <div class="contato-titulo">
         <svg
@@ -1118,6 +1221,7 @@
     </a>
 </div>
 
+<!-- LinkedIn -->
 <div class="item-contato">
     <div class="contato-titulo">
         <svg
@@ -1154,8 +1258,10 @@
             <!-- Formulário -->
             <form class="formulario-contato" id="formulario-contato">
                 
+                    <!-- Campo escondido anti-spam (robôs preenchem, pessoas não veem; o JS bloqueia o envio) -->
                     <input type="text" name="empresa" class="campo-oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
 
+                            <!-- Campo: Nome -->
                             <div class="campo-formulario">
                                 
                                 <label for="nome">Nome</label>
@@ -1170,6 +1276,7 @@
                             </div>
 
 
+                <!-- Campo: E-mail -->
                 <div class="campo-formulario">
                     <label for="email">E-mail</label>
 
@@ -1183,6 +1290,7 @@
                 </div>
 
 
+                <!-- Campo: Mensagem -->
                 <div class="campo-formulario">
                     <label for="mensagem">Mensagem</label>
 
@@ -1196,6 +1304,7 @@
                 </div>
 
 
+                <!-- Botão de envio (o envio é feito pelo script.js com EmailJS) -->
                 <button type="submit">
                     Enviar mensagem
                 </button>
@@ -1210,15 +1319,18 @@
 
     </main>
 
+    <!-- RODAPÉ: logo, links rápidos, redes sociais e copyright -->
     <footer class="rodape">
         <div class="rodape-container">
 
             <div class="rodape-topo reveal reveal-cima">
 
+                <!-- Logo -->
                 <div class="rodape-logo">
                     <img src="imgs/logo_port.png" alt="Logotipo Oficial">
                 </div>
 
+                <!-- Links rápidos (rolagem suave pelo script.js) -->
                 <nav class="rodape-links">
                     <h4>Links rápidos</h4>
                     <ul>
@@ -1230,6 +1342,7 @@
                     </ul>
                 </nav>
 
+                <!-- Redes sociais -->
                 <div class="rodape-redes">
                     <h4>Redes sociais</h4>
                     <div class="rodape-redes-icones">
@@ -1254,8 +1367,10 @@
 
             </div>
 
+            <!-- Linha divisória -->
             <div class="rodape-divisor"></div>
 
+            <!-- Copyright -->
             <div class="rodape-base">
                 <p>&copy; 2026 Luis Alberto. Todos os direitos reservados.</p>
             </div>
@@ -1263,7 +1378,9 @@
         </div>
     </footer>
 
+    <!-- Biblioteca EmailJS (envio do formulário de contato) -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Script do site (menu, animações, carrossel e formulário) -->
     <script src="js/script.js"></script>
 </body>
 </html>
